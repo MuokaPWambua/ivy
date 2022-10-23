@@ -45,7 +45,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../design.html">Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../deep_dive.html">Deep Dive</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="navigating_the_code.html">Navigating the Code</a></li>
@@ -449,6 +448,9 @@ and
 respectively, which traverse the abstract syntax tree of the compositional function and
 evaluate the relevant attributes for each primary function in the composition.
 The same approach applies for most stateful methods, which are themselves compositional.</p>
+<p>In order to get the supported and unsupported devices and dtypes for a function, the corresponding documentation
+of that function for that specific framework can be referred. However, sometimes new unsupported dtypes are
+discovered while testing too. So it is suggested to explore it both ways.</p>
 <p>It should be noted that <code class="xref py py-attr docutils literal notranslate"><span class="pre">unsupported_dtypes</span></code> is different from
 <code class="docutils literal notranslate"><span class="pre">ivy.invalid_dtypes</span></code> which consists of all the data types that every function
 of that particular backend does not support, and so if a certain <code class="docutils literal notranslate"><span class="pre">dtype</span></code> is
